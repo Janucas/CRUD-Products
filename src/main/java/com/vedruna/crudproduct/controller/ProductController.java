@@ -29,7 +29,7 @@ public class ProductController {
     }
 
     @GetMapping("/name/{product}")
-    public Product showUserByName(@PathVariable String product){
+    public Product showProductByName(@PathVariable String product){
         return productService.showProductByName(product);
     }
     //Añadir un producto
